@@ -1,0 +1,21 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+a.active hr{
+    display: block;
+}
+
+@media (max-width: 640px) {
+   a.active{
+    background-color: grey;
+    
+   }
+}
+::-webkit-scrollbar {
+    display: none;
+}
