@@ -1,48 +1,44 @@
-import React from 'react'
+import React from 'react';
 import { SlHeart } from "react-icons/sl";
 
 const Footer = () => {
   return (
-    <>
-    <div className='flex flex-col sm:grid grid-cols-[4fr_1fr_1fr] gap-12 my-10 mt-30 text-sm '>
-      <div>
-        LOGO
-        <p className='w-full md:w-2/3 text-gray-500 '>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque at vero harum, saepe numquam quam maiores assumenda debitis adipisci nulla unde quaerat non nemo fuga aliquid officia, laboriosam expedita. Veritatis?</p>
+    <footer className=' py-10 px-6 md:px-12'>
+      <div className='max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10'>
+        {/* Logo and Description */}
+        <div>
+          <h2 className='text-2xl font-bold tracking-wide'>LOGO</h2>
+          <p className=' mt-4 text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vero harum, saepe numquam quam maiores assumenda debitis adipisci nulla.</p>
+        </div>
+
+        {/* Quick Links */}
+        <div>
+          <h3 className='text-lg font-semibold mb-4'>Company</h3>
+          <ul className='space-y-2 '>
+            <li className='hover:text-gray-900 cursor-pointer transition'>Home</li>
+            <li className='hover:text-gray-900 cursor-pointer transition'>About Us</li>
+            <li className='hover:text-gray-900 cursor-pointer transition'>Privacy Policy</li>
+          </ul>
+        </div>
+
+        {/* Contact Details */}
+        <div>
+          <h3 className='text-lg font-semibold mb-4'>Get In Touch</h3>
+          <ul className='space-y-2 text-gray-900'>
+            <li>📞 +91-9828046336, 7340696336</li>
+            <li>✉️ contact@company.com</li>
+            <li>📍 Alwar,Rajasthan,India</li>
+          </ul>
+        </div>
       </div>
 
-      <div>
-        <p className='text-xl font-medum mb-5'>Company</p>
-        <ul className='flex flex-col gap-1 text-gray-500'>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Privacy Policy</li>
-        </ul>
+      {/* Footer Bottom Section */}
+      <div className='mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm'>
+        <p>&copy; 2025. All rights reserved.</p>
+        <p className='flex justify-center items-center mt-2 text-black text-md'>Made with <SlHeart className='text-red-500 mx-1' /> by Pritam Singh</p>
       </div>
-
-
-      <div className='flex flex-col '>
-      <div>
-      <p className='text-xl font-medum mb-5'>Get In Touch</p>
-      <ul className='flex flex-col gap-1 text-gray-500'>
-          <li>+91-9828046336, 7340696336</li>
-      </ul>
-      </div>
-      </div>
-
-
-      
-
-    
-
-    </div>
-
-    <div className='flex flex-col text-center w-full  '>
-      <hr></hr>
-      <p className='py-5 text-sm text-center font-thin'>Copywrite 2025. All rights reserved</p>
-      <p className='flex font-baseline'>Made with <span><SlHeart></SlHeart></span></p>
-    </div>
-    </>
-  )
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
